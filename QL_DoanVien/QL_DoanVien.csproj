@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{69A17146-8388-425D-8130-6A8E08C1AA7D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QL_DoanVien</RootNamespace>
+    <AssemblyName>QL_DoanVien</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cai_Dat\KhoaHoc\FormSuaKHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cai_Dat\KhoaHoc\FormSuaKHoc.Designer.cs">
+      <DependentUpon>FormSuaKHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cai_Dat\KhoaHoc\FormThemKHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cai_Dat\KhoaHoc\FormThemKHoc.Designer.cs">
+      <DependentUpon>FormThemKHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cai_Dat\KhoaHoc\FormXoaKHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cai_Dat\KhoaHoc\FormXoaKHoc.Designer.cs">
+      <DependentUpon>FormXoaKHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cai_Dat\Khoa\FormSuaKhoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cai_Dat\Khoa\FormSuaKhoa.Designer.cs">
+      <DependentUpon>FormSuaKhoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cai_Dat\Khoa\FormThemKhoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cai_Dat\Khoa\FormThemKhoa.Designer.cs">
+      <DependentUpon>FormThemKhoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cai_Dat\Khoa\FormXoaKhoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cai_Dat\Khoa\FormXoaKhoa.Designer.cs">
+      <DependentUpon>FormXoaKhoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cai_Dat\LopHoc\FormSuaLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cai_Dat\LopHoc\FormSuaLop.Designer.cs">
+      <DependentUpon>FormSuaLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cai_Dat\LopHoc\FormThemLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cai_Dat\LopHoc\FormThemLop.Designer.cs">
+      <DependentUpon>FormThemLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cai_Dat\LopHoc\FormXoaLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cai_Dat\LopHoc\FormXoaLop.Designer.cs">
+      <DependentUpon>FormXoaLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cai_Dat\Nganh\FormSuaNganh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cai_Dat\Nganh\FormSuaNganh.Designer.cs">
+      <DependentUpon>FormSuaNganh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cai_Dat\Nganh\FormThemNganh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cai_Dat\Nganh\FormThemNganh.Designer.cs">
+      <DependentUpon>FormThemNganh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cai_Dat\Nganh\FormXoaNganh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cai_Dat\Nganh\FormXoaNganh.Designer.cs">
+      <DependentUpon>FormXoaNganh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doan_vien\FormQLDoanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doan_vien\FormQLDoanVien.designer.cs">
+      <DependentUpon>FormQLDoanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doan_vien\FormSuaDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doan_vien\FormSuaDV.Designer.cs">
+      <DependentUpon>FormSuaDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doan_vien\FormXoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doan_vien\FormXoa.Designer.cs">
+      <DependentUpon>FormXoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\FormCapNhapQuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\FormCapNhapQuyen.Designer.cs">
+      <DependentUpon>FormCapNhapQuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doan_vien\FormChuyenSH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doan_vien\FormChuyenSH.designer.cs">
+      <DependentUpon>FormChuyenSH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDashboard.Designer.cs">
+      <DependentUpon>FormDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doan_vien\FormDoanPhi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doan_vien\FormDoanPhi.designer.cs">
+      <DependentUpon>FormDoanPhi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain1.Designer.cs">
+      <DependentUpon>FormMain1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\FormPhanQuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\FormPhanQuyen.Designer.cs">
+      <DependentUpon>FormPhanQuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cai_Dat\Khoa\FormQLKhoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cai_Dat\Khoa\FormQLKhoa.designer.cs">
+      <DependentUpon>FormQLKhoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cai_Dat\KhoaHoc\FormQLKhoaHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cai_Dat\KhoaHoc\FormQLKhoaHoc.designer.cs">
+      <DependentUpon>FormQLKhoaHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cai_Dat\LopHoc\FormQLLopHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cai_Dat\LopHoc\FormQLLopHoc.designer.cs">
+      <DependentUpon>FormQLLopHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cai_Dat\Nganh\FormQLNganh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cai_Dat\Nganh\FormQLNganh.designer.cs">
+      <DependentUpon>FormQLNganh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doan_vien\FormSuaThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doan_vien\FormSuaThongTin.designer.cs">
+      <DependentUpon>FormSuaThongTin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doan_vien\FormThem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doan_vien\FormThem.designer.cs">
+      <DependentUpon>FormThem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doan_vien\FormTimKiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doan_vien\FormTimKiem.designer.cs">
+      <DependentUpon>FormTimKiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\FormTTUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\FormTTUser.Designer.cs">
+      <DependentUpon>FormTTUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\FormUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\FormUser.Designer.cs">
+      <DependentUpon>FormUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLDV.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLDV.dbml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cai_Dat\KhoaHoc\FormSuaKHoc.resx">
+      <DependentUpon>FormSuaKHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cai_Dat\KhoaHoc\FormThemKHoc.resx">
+      <DependentUpon>FormThemKHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cai_Dat\KhoaHoc\FormXoaKHoc.resx">
+      <DependentUpon>FormXoaKHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cai_Dat\Khoa\FormSuaKhoa.resx">
+      <DependentUpon>FormSuaKhoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cai_Dat\Khoa\FormThemKhoa.resx">
+      <DependentUpon>FormThemKhoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cai_Dat\Khoa\FormXoaKhoa.resx">
+      <DependentUpon>FormXoaKhoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cai_Dat\LopHoc\FormSuaLop.resx">
+      <DependentUpon>FormSuaLop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cai_Dat\LopHoc\FormThemLop.resx">
+      <DependentUpon>FormThemLop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cai_Dat\LopHoc\FormXoaLop.resx">
+      <DependentUpon>FormXoaLop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cai_Dat\Nganh\FormSuaNganh.resx">
+      <DependentUpon>FormSuaNganh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cai_Dat\Nganh\FormThemNganh.resx">
+      <DependentUpon>FormThemNganh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cai_Dat\Nganh\FormXoaNganh.resx">
+      <DependentUpon>FormXoaNganh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doan_vien\FormQLDoanVien.resx">
+      <DependentUpon>FormQLDoanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doan_vien\FormSuaDV.resx">
+      <DependentUpon>FormSuaDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doan_vien\FormXoa.resx">
+      <DependentUpon>FormXoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\FormCapNhapQuyen.resx">
+      <DependentUpon>FormCapNhapQuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doan_vien\FormChuyenSH.resx">
+      <DependentUpon>FormChuyenSH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDashboard.resx">
+      <DependentUpon>FormDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doan_vien\FormDoanPhi.resx">
+      <DependentUpon>FormDoanPhi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain1.resx">
+      <DependentUpon>FormMain1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\FormPhanQuyen.resx">
+      <DependentUpon>FormPhanQuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cai_Dat\Khoa\FormQLKhoa.resx">
+      <DependentUpon>FormQLKhoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cai_Dat\KhoaHoc\FormQLKhoaHoc.resx">
+      <DependentUpon>FormQLKhoaHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cai_Dat\LopHoc\FormQLLopHoc.resx">
+      <DependentUpon>FormQLLopHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cai_Dat\Nganh\FormQLNganh.resx">
+      <DependentUpon>FormQLNganh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doan_vien\FormSuaThongTin.resx">
+      <DependentUpon>FormSuaThongTin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doan_vien\FormThem.resx">
+      <DependentUpon>FormThem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doan_vien\FormTimKiem.resx">
+      <DependentUpon>FormTimKiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\FormTTUser.resx">
+      <DependentUpon>FormTTUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\FormUser.resx">
+      <DependentUpon>FormUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="QLDV.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>QLDV.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLDV.dbml.layout">
+      <DependentUpon>QLDV.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="wwwroot\Image\arrow_left_96px.png" />
+    <Content Include="wwwroot\Image\arrow_left_dark_96px.png" />
+    <Content Include="wwwroot\Image\change_user_male_96px.png" />
+    <Content Include="wwwroot\Image\conference_96px.png" />
+    <Content Include="wwwroot\Image\home_96px.png" />
+    <Content Include="wwwroot\Image\IClogo-doan.ico" />
+    <Content Include="wwwroot\Image\icons8_invoice_96px_1.png" />
+    <Content Include="wwwroot\Image\java_coffee_cup_logo_96px.png" />
+    <Content Include="wwwroot\Image\logo-doan.png" />
+    <Content Include="wwwroot\Image\logo-haui.png" />
+    <Content Include="wwwroot\Image\settings_96px.png" />
+    <Content Include="wwwroot\Image\shutdown_96px.png" />
+    <Content Include="wwwroot\Image\shutdown_dark_96px.png" />
+    <Content Include="wwwroot\Image\statistics_96px.png" />
+    <Content Include="wwwroot\Image\transfer_between_users_96px.png" />
+    <Content Include="wwwroot\Image\user_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
